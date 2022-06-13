@@ -18,7 +18,8 @@ function errorHandler(error) {
 
 function clickHandler() {
     const inputText = txtInput.value; // taking input
-
+    if(inputText === '')
+        alert("Please Enter the text to be translated");
     // calling server for processing
     fetch(getTranslationURL(inputText))
         .then(response => response.json())
