@@ -5,34 +5,53 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./styles.css">
+
     <title>Banana Language</title>
 </head>
 
 <body>
-    <p>A minion sitting behind the site to translate your english into banana 🍌</p>
-    <p>wait, what's that? if you're wondering, honestly I don't hey!! wait let me speak </p>
-    <p><em>hey champ, amee nama to, Yi kai yai yai! up mokatino to quer me da bowrax</em></p>
+    <div class="root-el">
+        <header>
+            <h1 class="text-center">Speaking Minionese</h1>
+        </header>
+        <main class="text-center">
+            <p>A minion sitting behind the site to translate your english into banana 🍌</p>
+            <p>wait, what's that? if you're wondering, honestly I don't ...... HEY!! wait let me speak </p>
+            <p class="minion-speaks"><em>hey champ, amee nama to, Yi kai yai yai! up mokatino to quer me da bowrax</em>
+            </p>
 
-    <p>Hey gimme the control sorry for that in between, the minion you know!!..hmm why don't you start
-        translating by what the minion said 😁
-    </p>
+            <p>Hey gimme the control sorry for that in between, the minion you know!!..hmm why don't you start
+                translating by what the minion said 😁
+            </p>
+            <section class="translator">
+                <textarea id="txt-input"
+                    placeholder="put your sentence in English here and we will convert it to banana"></textarea>
+                <button id="btn-translate">
+                    <div><img src="./banana-img.svg" alt="banana image"></div>
+                </button>
+                <p><span class="block">👆</span>
+                    Click and Turn it into banana language</p>
 
-    <textarea id="txt-input"
-        placeholder="put your sentence in English here and we will convert it to banana"></textarea>
-    <button id="btn-translate">Translate</button>
+
+                <div class="tenor-gif-embed minion-animation" data-postid="15124942" data-share-method="host"
+                    data-aspect-ratio="1.77778" data-width="300px">
+                    <a href="https://tenor.com/view/computer-internet-minions-hacker-computador-gif-15124942">Computer
+                        Internet
+                        GIF</a>from <a href="https://tenor.com/search/computer-gifs">Computer GIFs</a>
+                </div>
+
+                <div style="font-size: larger;">...translated words appear down here 👇</div>
 
 
-    <div class="tenor-gif-embed" data-postid="15124942" data-share-method="host" data-aspect-ratio="1.77778"
-        data-width="300px">
-        <a href="https://tenor.com/view/computer-internet-minions-hacker-computador-gif-15124942">Computer Internet
-            GIF</a>from <a href="https://tenor.com/search/computer-gifs">Computer GIFs</a>
+                <div id="output"></div>
+            </section>
+        </main>
+        <footer class="text-center">
+            <p>&copy; | 2022 | <a href="https://muralidhar-portfolio.netlify.app/">Muralidhar</a></p>
+        </footer>
     </div>
-
-    <div style="font-size: larger;">...Minion will translate and translated words appear down here 👇</div>
-
-
-    <div id="output"></div>
-
     <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
     <script src="app.js"></script>
 </body>

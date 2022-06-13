@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Happy+Monkey&display=swap');
+
+body {
+    background-color: beige;
+    font-family: 'Happy Monkey', cursive;
+}
+
+.translator {
+    padding: 3rem;
+    background-color: hsla(60, 88%, 53%, .5);
+    border-radius: 24% 10% 22% 10% / 51% 32% 59% 40%;
+}
+
+h1 {
+    border-bottom: 5px solid hsla(60, 88%, 53%, .5);
+}
+
+p {
+    word-spacing: 5px;
+}
+
+.block {
+    display: block;
+}
+
+.root-el {
+    max-width: 600px;
+    margin: auto;
+}
+
+.text-center {
+    text-align: center;
+}
+
+textarea {
+    width: 80%;
+    height: 10vh;
+    display: block;
+    margin: 1rem auto;
+    padding: 1rem;
+    border-top-right-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    background-color: beige;
+}
+
+.minion-animation {
+    margin: 1rem auto;
+    max-width: 100%;
+}
+
+.minion-speaks {
+    font-weight: bold;
+}
+
+#output {
+    border: 1px solid black;
+    height: 10vh;
+    width: 80%;
+    margin: 1rem auto;
+    padding: 1rem;
+    border-top-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    background-color: beige;
+}
+
+#btn-translate {
+    display: block;
+    margin: auto;
+    width: 100px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    border-bottom: 2px solid black;
+    border-radius: 1rem;
+
+}
